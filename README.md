@@ -1,2 +1,3 @@
 # Sisko-Media-Player
 it are being added soon ....
+[This what it look like](Sisko-Media-Player/ScreenShot.png)
