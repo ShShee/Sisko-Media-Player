@@ -43,7 +43,7 @@ Only one will be chosen to played.Hidden playerbar which will appear if mouse mo
 Notice: Playlist is not available for watching movies so that modes in regard to it will be disabled
 
 
-# Video Example
+# About Video Example
 
 Coming soon...
 
