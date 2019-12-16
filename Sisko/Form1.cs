@@ -125,7 +125,7 @@ namespace Sisko
                 }
                else if(listBox1.SelectedIndex<listBox1.Items.Count-1 && repeat_mode_status==false && shuffle_mode_status==false)
                  forward_btn.PerformClick();
-                else if(listBox1.SelectedIndex == listBox1.Items.Count - 1 && repeat_mode_status == false && shuffle_mode_status == false)
+                else if(listBox1.SelectedIndex == listBox1.Items.Count - 1 && repeat_mode_status == false && shuffle_mode_status == false && movie_mode==false)
                 {
                   DialogResult reusult =MessageBox.Show("Play again", "Resume", MessageBoxButtons.YesNo, MessageBoxIcon.Question,MessageBoxDefaultButton.Button1);
                     switch (reusult)
@@ -147,6 +147,8 @@ namespace Sisko
                 }
               else if(repeat_mode_status==true)
                     forward_btn.PerformClick();
+               else if(movie_mode==true)
+                     play_btn.Enabled=false;
             }
             //
             //Gia tăng
@@ -185,6 +187,7 @@ namespace Sisko
                 forward_btn.Show();
                 shuffle_btn.Show();
                 repeat_btn.Show();
+                play_btn.Enabled=true;
                 music_mode = true;
                 command = false;
                 save = false;
@@ -222,6 +225,7 @@ namespace Sisko
                 shuffle_btn.Hide();
                 repeat_btn.Hide();
                 movie_mode = true;
+                play_btn.Enabled=true;
                 music_mode = false;
                 var tfile = TagLib.File.Create(opFD.FileName);
                 var duration = (int)tfile.Properties.Duration.TotalSeconds;
