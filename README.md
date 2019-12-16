@@ -34,13 +34,26 @@ Furthermore, Sisko also assists users with modes such as:
 
 + Jump: to skip time by click trackbar (only 5s each leap) or scroll trackbar
 
+
+
 # About playing movies
 
-Only one will be chosen to played. While movie is being played, playbar is hidden and it will appear if mouse moves. 
-
-Hidden playerbar and maximize button will help to optimizes the space for showing movie.
+Only one will be chosen to played.Hidden playerbar which will appear if mouse moves and maximize button will help to optimizes the space for showing movie.
 
 Notice: Playlist is not available for watching movies so that modes in regard to it will be disabled
+
+
+# Video Example
+
+Coming soon...
+
+# About Tool
+
++ C# winform
++ [TagLib-Sharp](https://github.com/mono/taglib-sharp)
++ [.Net Reactor](https://www.eziriz.com/dotnet_reactor.htm)
++ [Inno Setup Complier](https://jrsoftware.org/isdl.php)
+
 
 
 
