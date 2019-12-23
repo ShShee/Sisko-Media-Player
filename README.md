@@ -43,9 +43,9 @@ Only one will be chosen to played.Hidden playerbar which will appear if mouse mo
 Notice: Playlist is not available for watching movies so that modes in regard to it will be disabled
 
 
-# About Video Example
+# [About Video Example](https://youtu.be/XE6uWit5Bn8)
 
-[It's here](https://youtu.be/XE6uWit5Bn8)
+
 
 # About Tool
 
