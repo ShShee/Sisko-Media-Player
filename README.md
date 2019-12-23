@@ -45,7 +45,7 @@ Notice: Playlist is not available for watching movies so that modes in regard to
 
 # About Video Example
 
-![You got it](https://youtu.be/XE6uWit5Bn8)
+[It's here](https://youtu.be/XE6uWit5Bn8)
 
 # About Tool
 
