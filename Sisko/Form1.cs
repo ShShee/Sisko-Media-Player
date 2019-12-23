@@ -30,6 +30,7 @@ namespace Sisko
         Timer t = new Timer();
         Timer showtime = new Timer();
         Timer hide_playbar = new Timer();
+        Timer hide_upper=new Timer();
         public Siskoo()
         {
             InitializeComponent();
@@ -39,11 +40,13 @@ namespace Sisko
             t.Tick += T_Tick;
             showtime.Tick += Showtime_Tick;
             hide_playbar.Tick += Hide_playbar_Tick;
+            hide_upper.Tick+=Hide_upper_Tick;
             //
             //Timer thong tin
             t.Interval = 1000;
             showtime.Interval = 1000;
-            hide_playbar.Interval = 10;
+            hide_playbar.Interval = 100;
+            hide_upper.Interval=100;
             //
         }
         private void Sisko_Load(object sender, EventArgs e)
@@ -54,7 +57,7 @@ namespace Sisko
         }
 
         #region Hide PlayBar
-        private void Hide_playbar(Panel pnl)
+        private void Hide_upper(Panel pnl)
         {
             Rectangle r = pnl.RectangleToScreen(pnl.ClientRectangle);
             if (r.Contains(MousePosition))
@@ -70,14 +73,17 @@ namespace Sisko
         }
         private void Hide_playbar_Tick(object sender, EventArgs e)
         {
-            Hide_playbar(panel4);
            if(MousePosition!=Prev_Location)
             {
                 panel2.Visible = true;
                 Prev_Location = MousePosition;
                 hide_playbar.Interval = 3000;
             }
-           else { panel2.Visible = false; hide_playbar.Interval = 10; }
+           else { panel2.Visible = false; hide_playbar.Interval = 100; }
+        }
+         private void Hide_upper_Tick(object sender, EventArgs e)
+        {
+            Hide_upper(panel4);
         }
         #endregion
 
@@ -192,6 +198,7 @@ namespace Sisko
                 command = false;
                 save = false;
                 hide_playbar.Stop();
+                hide_upper.Stop();
                 panel2.Visible = true;
                 panel4.Visible = true;
                 listBox1.Show();
@@ -236,6 +243,7 @@ namespace Sisko
                 show = 0;
                 songname.Text = "----------------------------------------------------------";
                 hide_playbar.Start();
+                hide_upper.Start();
                 t.Enabled = true;
                 movie_playing = true;
                 play_btn.BackgroundImage = Sisko.Properties.Resources.icons8_gradient_line_65;
