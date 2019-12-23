@@ -220,6 +220,7 @@ namespace Sisko
             {
                 elementHost1.BringToFront();
                 listBox1.Items.Clear();
+                path.Clear();
                 listBox1.Hide();
                 pictureBox1.Hide();
                 sound.UnloadedBehavior = 0;
