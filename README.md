@@ -18,6 +18,8 @@ Furthermore, Sisko also assists users with modes such as:
 
 + Forward: play next song of now playing in playlist.
 
+![FE](https://media.giphy.com/media/SxGOgxiItoN3gcobPb/giphy.gif)
+
 + Backward: play previous song of now playing in playlist.
 
 + Stop: to halt completely now playing song 
@@ -53,7 +55,6 @@ Notice: Playlist is not available for watching movies so that modes in regard to
 + [TagLib-Sharp](https://github.com/mono/taglib-sharp)
 + [.Net Reactor](https://www.eziriz.com/dotnet_reactor.htm)
 + [Inno Setup Complier](https://jrsoftware.org/isdl.php)
-![test](https://media.giphy.com/media/SxGOgxiItoN3gcobPb/giphy.gif)
 
 
 
